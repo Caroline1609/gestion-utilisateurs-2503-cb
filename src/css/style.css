@@ -9,58 +9,87 @@
   --texte: #333;
 }
 
-body {
+* {
   margin: 0;
-  font-family :Verdana, Geneva, Tahoma, sans-serif;
-  background-color: var(--lavande);
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenaire {
+  border: solid 2px var(--indigo);
+  width: 850px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center
+}
+
+body {
+  font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: var(--texte);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  height: 100vh;
+  justify-content: flex-start;
+
 }
 
-.profile-container {
+header {
   width: 100%;
-  max-width: 400px;
-  padding: 20px;
-}
-
-.card {
-  background: var(--blanc);
-  border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  padding: 40px 30px;
+  padding: 1rem 1rem;
   text-align: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
-.avatar {
-  font-size: 80px;
-  color: var(--indigo);
-  margin-bottom: 15px;
+header img {
+  max-width: 200px;
 }
 
-h2 {
-  color: var(--indigo);
-  margin: 10px 0;
+h1 {
+  font-size: 2rem;
+  margin: 0;
+  margin-left: 11rem;
 }
 
-.email {
-  color: var(--orange);
-  font-size: 14px;
-  margin-bottom: 20px;
+p {
+  font-size: 1.1rem;
 }
 
-.details {
-  text-align: left;
-  margin-top: 20px;
+main {
+  width: 100%;
+  max-width: 50%;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-.detail {
-  margin-bottom: 10px;
+ul {
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+  padding: 0;
+  width: 100%;
 }
 
-.label {
+ul li a {
+  display: block;
+  padding: 1rem;
+  background: linear-gradient(135deg, var(--jaune), var(--rouge));
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--blanc);
   font-weight: bold;
-  color: var(--jaune);
-  margin-right: 5px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+ul li a:hover {
+  background: var(--lavande);
+  color: var(--blanc);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
 }
