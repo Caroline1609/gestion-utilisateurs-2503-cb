@@ -63,7 +63,6 @@ header {
   color: var(--blanc);
 }
 
-/* ----- TITRES ----- */
 .page-header {
   margin-bottom: 20px;
 }
@@ -81,8 +80,11 @@ header {
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
+
+
+
 /* ----- FORMULAIRES ----- */
-.form-grid {
+form {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -98,7 +100,28 @@ header {
   border: 1px solid #ddd;
   border-radius: 6px;
   font-size: 15px;
+  
 }
+
+textarea{
+  resize: block;
+}
+
+.centrer{
+  display: flex;
+  justify-content: center;
+}
+
+input[type="submit"]{
+  background-color: var(--orange);
+  width: 10rem;
+  height: 3rem;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.1rem;
+
+}
+
 .input:focus {
   border-color: var(--lavande);
   outline: none;
