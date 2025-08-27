@@ -17,7 +17,7 @@
 
 
 body {
-  font-family: system-ui, sans-serif;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   background: var(--gris);
   color: var(--texte);
   line-height: 1.5;
@@ -80,8 +80,9 @@ header {
 
 form {
   display: flex;
-  flex-direction: column;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center
 }
 .label {
   display: block;
@@ -90,7 +91,6 @@ form {
   flex-basis: 20%;
 }
 .input {
-  width: 100%;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 6px;
@@ -223,15 +223,23 @@ table button{
 
 }
 
-form input[type="text"],
-form input[type="email"],
-form select {
-  width: 100%;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font-size: 14px;
+label{
+  flex-basis: 32%;
+  text-align: center;
+}
 
+input{
+  flex-basis: 40%;
+  padding: 10px;
+  font-size: 15px;
+  border: solid 1px var(--indigo);
+  
+}
+
+select{
+  flex-basis: 40%;
+  height: 41px;
+    border: solid 1px var(--indigo);
 }
 
 
