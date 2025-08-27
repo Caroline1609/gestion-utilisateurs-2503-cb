@@ -25,7 +25,6 @@ body {
 .container {
   max-width: 900px;
   margin: 20px auto;
-  padding: 0 16px;
 }
 
 header {
@@ -88,6 +87,7 @@ form {
   display: block;
   font-weight: 600;
   margin-bottom: 6px;
+  flex-basis: 20%;
 }
 .input {
   width: 100%;
@@ -95,6 +95,7 @@ form {
   border: 1px solid #ddd;
   border-radius: 6px;
   font-size: 15px;
+  margin-left: 30px;
   
 }
 
@@ -105,6 +106,8 @@ textarea{
 .centrer{
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center
 }
 
 input[type="submit"]{
@@ -152,7 +155,6 @@ textarea.input {
   background: var(--gris);
 }
 
-/* ----- FORM ACTIONS ----- */
 .form-actions {
   margin-top: 20px;
   display: flex;
@@ -204,3 +206,35 @@ table button{
   color: white;
   background-color: var(--indigo);
 }
+
+.profile-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--lavande);
+  margin-bottom: 20px;
+}
+
+.profile-info p {
+  font-size: 18px;
+  color: #333;
+  margin: 8px 0;
+
+}
+
+form input[type="text"],
+form input[type="email"],
+form select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+
+}
+
+
+
+
+
