@@ -239,10 +239,6 @@ input{
 select{
   flex-basis: 40%;
   height: 41px;
-    border: solid 1px var(--indigo);
+  border: solid 1px var(--indigo);
 }
-
-
-
-
 
