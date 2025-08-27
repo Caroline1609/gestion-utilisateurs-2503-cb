@@ -3,12 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ajouter un rôle</title>
+  <title>Liste des rôles</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-
-  <!-- 🔹 Header -->
     <header>
         <div class="header-inner">
         <a href="index.html" class="logo">
@@ -16,14 +14,75 @@
         </a>
         <nav class="main-nav">
             <ul>
-            <li><a href="roles.html">Rôles</a></li>
-            <li><a href="utilisateurs.html">Utilisateurs</a></li>
-            <li><a href="profil.html">Profil</a></li>
+              <li><a href="roles.html">Rôles</a></li>
+              <li><a href="utilisateurs.html">Utilisateurs</a></li>
+              <li><a href="profil.html">Profil</a></li>
             </ul>
         </nav>
     </header>
     <main class="container">
-        
+        <div class="page-header">
+          <h1 class="h1">Liste des Rôles</h1>
+        </div>
+        <div class="card">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Nom du rôle</th>
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Administrateur</th>
+                <td>
+                  <ul>
+                    <li>Un administrateur est un encadrant avec privilèges accrus</li>
+                    <li>Un administrateur peut consulter le profil individuel de n’importe quel utilisateur</li>
+                    <li>Un administrateur peut modifier toutes les informations d’un utilisateur enregistré</li>
+                    <li>Un administrateur peut ajouter un utilisateur sans code d’inscription</li>
+                    <li>Un administrateur peut supprimer un utilisateur</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Encadrant</th>
+                <td>
+                  <ul>
+                    <li>Un encadrant est un usager avec privilèges accrus</li>
+                    <li>Un encadrant peut consulter les profils individuels des usagers et encadrants</li>
+                    <li>Un encadrant peut modifier les informations des usagers sauf leur rôle et leur mot de passe</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Usager</th>
+                <td>
+                  <ul>
+                    <li>Un usager peut consulter son profil</li>
+                    <li>Un usager peut modifier les informations de son propre profil sauf son rôle</li>
+                    <li>Un usager peut parcourir la liste des utilisateurs enregistrés</li>
+                    <li>La liste des utilisateurs affiche : Nom, Prénom, Intitulé du rôle</li>
+                    <li>Un usager ne peut pas consulter les fiches individuelles des autres utilisateurs</li>
+                    <li>Un usager peut se déconnecter de l’application</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Invité</th>
+                <td>
+                  <ul>
+                    <li>Un invité peut s’identifier</li>
+                    <li>Après identification, il est redirigé vers la page de son profil</li>
+                    <li>Un invité peut créer un compte s’il dispose du code d’inscription</li>
+                    <li>Après la création, il est redirigé vers le formulaire d’identification</li>
+                    <li>Un invité peut demander à réinitialiser son mot de passe</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
     </main>
 
 

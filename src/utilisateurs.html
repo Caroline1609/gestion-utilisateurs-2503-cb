@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Liste Utilisateur</title>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+        <a href="index.html" class="logo">
+            <img src="./img/logo/CRM_logo-horizontal.png" alt="Logo">
+        </a>
+        <nav class="main-nav">
+            <ul>
+              <li><a href="roles.html">Rôles</a></li>
+              <li><a href="utilisateurs.html">Utilisateurs</a></li>
+              <li><a href="profil.html">Profil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="page-header">
+          <h1 class="h1">Liste des Utilisateurs</h1>
+        </div>
+        <div class="card">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Prénom</th>
+                <th scope="col">E-mail</th>
+                <th scope="col">Rôle</th>
+                <th scope="col">Accès au profil</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">01</th>
+                <td>Bruno</td>
+                <td>bruno@gmail.com</td>
+                <td>Usager</td>
+                <td><button href="profil.html">Voir le Profil</button></td>
+              </tr>
+              <tr>
+                <th scope="row">02</th>
+                <td>Hulya</td>
+                <td>hulya@gmail.com</td>
+                <td>Encadrant</td>
+                <td><button type="button" href="profil.html">Voir le Profil</button></td>
+              </tr>
+              <tr>
+                <th scope="row">03</th>
+                <td>Frédéric</td>
+                <td>frederic@gmail.com</td>
+                <td>Encadrant</td>
+                <td><button>Voir le Profil</button></td>
+              </tr>
+              <tr>
+            </tbody>
+          </table>
+        </div>
+    </main>
+</body>
+</html>
