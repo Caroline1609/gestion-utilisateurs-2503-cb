@@ -17,6 +17,8 @@ formUser.addEventListener('submit', (event) => {
     try {
         user.isValidate()
         console.log(user)
+        resultat.textContent = 'Formulaire validé'
+
 
     } catch (error) {
         

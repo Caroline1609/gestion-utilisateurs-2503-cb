@@ -17,6 +17,7 @@ export class Validate
         _firstname = _firstname.trim();
 
         if(!regexFirstname.test(_firstname)) {
+            firstname.style.border = "solid red 2px" ;
             throw new Error('Le prénom n\'ai pas valide');
         }
     }
@@ -31,19 +32,24 @@ export class Validate
         _email = _email.trim();
 
         if(!regexEmail.test(_email)) {
+            email.style.border = "solid red 2px" ;
             throw new Error('L\'email n\'ai pas valide');
+
         }
 
     }
 
-    checkSelect(_role){
+    /**
+     * 
+     * @param {string} _select Vérifie qu'une option a bien était selectionner
+     */
+    checkSelect(_role) {
 
+        let _role = [administrateur, encadrant, usager, invite];
+
+        
     }
 
 
-
-
-
-
-
 }
+

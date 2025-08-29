@@ -15,17 +15,18 @@ export class User
      */
 
     constructor(_firstname, _email, _role ){
-        this._firstname = _firstname;
+        this.firstname = _firstname;
         this.email = _email;
         this.role = _role;
     }
 
     isValidate(){
-        let checkname = new Validate();
-        checkname.checkFirstname(this._firstname);
 
-        let checkMail = new Validate();
-        checkMail.checkEmail(this.email);
+        let checkValidate = new Validate();
+
+        checkValidate.checkFirstname(this.firstname);
+        checkValidate.checkEmail(this.email);
+        checkValidate.checkSelect(this.role)
 
 
     }
